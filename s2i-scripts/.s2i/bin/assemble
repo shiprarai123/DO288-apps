@@ -11,7 +11,7 @@ config_s2i
 ######## CUSTOMIZATION STARTS HERE ############
 echo "---> start of customised assemble script"
 cp -Rf /tmp/src/*.html ./
-DATE=`date"+%Y-%m-%d-%d"`
+DATE=$(date "+ %Y-%m-%d-%d")
 echo "$DATE" >> ./info.html
 echo "my msg" >> ./info.html
 
